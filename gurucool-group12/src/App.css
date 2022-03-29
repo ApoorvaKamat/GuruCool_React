@@ -1,4 +1,4 @@
-.App {
+.imageClass {
   text-align: center;
   content: '';
   background-image: url('../public/images/Background_Books.jpeg');
@@ -13,4 +13,57 @@
   height: 100vh;
   display: flex;
 }
-
+.headerLogoLink {
+  color: beige;
+}
+.Logo {
+  width: 5%;
+}
+.LogoTemplate {
+  width: 20%;
+}
+.header {
+  top: 0%; 
+  position: inherit; 
+  width: 100%;
+}
+.customfooter {
+  bottom: 0%; 
+  position: fixed; 
+  width: 100%;
+}
+.copywrite{
+  background-color: rgba(0, 0, 0, 0.2);
+}
+.navElementAdjust {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.loginSignUp{
+  min-width: 100px;
+}
+.searchBar{
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%,-50%);
+  height:50px ;
+  width: 80%;
+  border: 2px solid;
+  border-radius: 20px;
+  overflow: hidden;
+}
+.searchBar input {
+  box-shadow: none; 
+  border-width:0px; 
+  border:none;
+  opacity: 0.75;
+}
+.searchBar button {
+  box-shadow: none; 
+  border-width:0px; 
+  border:none; 
+  pointer-events:none;
+  background-color: white;
+}
