@@ -1,6 +1,7 @@
 import './App.css';
 import { Header } from './components/header';
-
+import SearchBar from './components/search';
+import Footer from './components/footer';
 
 
 function App() {
@@ -9,6 +10,9 @@ function App() {
       <div className='imageClass'>
       </div>
       <Header />
+      <SearchBar/>
+      <Footer/>
+
     </div>
   );
 }
