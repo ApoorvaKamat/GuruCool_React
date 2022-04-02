@@ -2,8 +2,7 @@ import './App.css';
 import { Header } from './components/header';
 import SearchBar from './components/search';
 import Footer from './components/footer';
-
-import Navbar from './components/Navbar';
+import Navbar from './components/navbar';
 
 function App() {
   return (
