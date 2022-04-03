@@ -9,7 +9,7 @@
 		  "state": "Texas",
 		  "country": "USA"
 		},
-		"tutorDescription": "demo demo",
+		"tutorDescription": "Teaches Python",
 		"tutorLevel": 2,
 		"tutorExpertise": "Python",
 		"tutorNumOfChats": 100,
@@ -53,7 +53,7 @@
 		  "state": "Texas",
 		  "country": "USA"
 		},
-		"tutorDescription": "demo demo",
+		"tutorDescription": "Teaches C#",
 		"tutorLevel": 2,
 		"tutorExpertise": "Java",
 		"tutorNumOfChats": 100,
@@ -87,9 +87,9 @@
 		  "state": "Texas",
 		  "country": "USA"
 		},
-		"tutorDescription": "demo demo",
+		"tutorDescription": "Teaches Unity",
 		"tutorLevel": 2,
-		"tutorExpertise": "C",
+		"tutorExpertise": "AR/VR",
 		"tutorNumOfChats": 100,
 		"tutorCertificates": [
 		  "Python",
