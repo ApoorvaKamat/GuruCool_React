@@ -1,0 +1,116 @@
+{
+	"Tutors": [
+	  {
+		"tutorName": "Shambhavi",
+		"profilePicture": "pathOfImage",
+		"tutorRating": 5,
+		"tutorLocation": {
+		  "city": "Dallas",
+		  "state": "Texas",
+		  "country": "USA"
+		},
+		"tutorDescription": "demo demo",
+		"tutorLevel": 2,
+		"tutorExpertise": "Python",
+		"tutorNumOfChats": 100,
+		"tutorCertificates": [
+		  "Python",
+		  "Java",
+		  "C"
+		],
+		"workingHours": "9am-5pm",
+		"feedback": [
+		  {
+			"Dhruv": "Good",
+			"Jayant": "Good"
+		  }
+		],
+		"rating": [
+		  {
+			"Dhruv": 5,
+			"Jayant": 5
+		  }
+		],
+		"noOfHrsPerDay": 10,
+		"noOfAppointmentsAvailable": 1,
+		"appointmentInfo": [
+		  {
+			"username": "jayant",
+			"time": "8"
+		  },
+		  {
+			"username": "jayant",
+			"time": "8"
+		  }
+		]
+	  },
+	  {
+		"tutorName": "Apoorva K",
+		"profilePicture": "pathOfImage",
+		"tutorRating": 5,
+		"tutorLocation": {
+		  "city": "Dallas",
+		  "state": "Texas",
+		  "country": "USA"
+		},
+		"tutorDescription": "demo demo",
+		"tutorLevel": 2,
+		"tutorExpertise": "Java",
+		"tutorNumOfChats": 100,
+		"tutorCertificates": [
+		  "Python",
+		  "Java",
+		  "C"
+		],
+		"workingHours": "9am-5pm",
+		"feedback": [
+		  {
+			"Dhruv": "Good",
+			"Jayant": "Good"
+		  }
+		],
+		"rating": [
+		  {
+			"Dhruv": 5,
+			"Jayant": 5
+		  }
+		],
+		"noOfHrsPerDay": 10,
+		"noOfAppointmentsAvailable": 4
+	  },
+	  {
+		"tutorName": "Apoorva P",
+		"profilePicture": "pathOfImage",
+		"tutorRating": 5,
+		"tutorLocation": {
+		  "city": "Dallas",
+		  "state": "Texas",
+		  "country": "USA"
+		},
+		"tutorDescription": "demo demo",
+		"tutorLevel": 2,
+		"tutorExpertise": "C",
+		"tutorNumOfChats": 100,
+		"tutorCertificates": [
+		  "Python",
+		  "Java",
+		  "C"
+		],
+		"workingHours": "9am-5pm",
+		"feedback": [
+		  {
+			"Nikhil": "Good",
+			"Jayant": "Good"
+		  }
+		],
+		"rating": [
+		  {
+			"Nikhil": 5,
+			"Jayant": 5
+		  }
+		],
+		"noOfHrsPerDay": 10,
+		"noOfAppointmentsAvailable": 3
+	  }
+	]
+  }
