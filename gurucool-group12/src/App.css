@@ -54,6 +54,9 @@
   border-radius: 20px;
   overflow: hidden;
 }
+.searchBarOnfetch{
+  top: 25%;
+}
 .searchBar input {
   box-shadow: none; 
   border-width:0px; 
@@ -66,4 +69,52 @@
   border:none; 
   pointer-events:none;
   background-color: white;
+}
+.navblack{
+  height: 60px;
+}
+.tutor-list-container{
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 20px;
+  justify-content: center;
+  align-items: center;
+}
+.tutor-card-container{
+  border-radius: 10px;
+  border: 1px solid gray;
+  padding: 10px;
+  margin: 10px;
+  cursor: pointer;
+}
+.tutor-card-container:hover{
+  box-shadow: 5px 5px 10px gray;
+}
+.tutor-name{
+  font-weight: 600;
+  font-size: 16px;
+  text-align: left;
+}
+.tutor-profile{
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+  align-items: center;
+  text-align: left;
+}
+.profile-pic{
+  width: 100px;
+  height: 100px;
+}
+.top-margin{
+  margin-top: 20px;
+}
+.left-align{
+  text-align: left;
+}
+.bold-font{
+  font-weight: 600;
+}
+.inactive{
+  display: none;
 }

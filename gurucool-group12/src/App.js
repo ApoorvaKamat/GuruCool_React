@@ -1,8 +1,7 @@
 import './App.css';
 import { Header } from './components/header';
-import SearchBar from './components/search';
 import Footer from './components/footer';
-
+import Navbar from './components/navbar';
 
 function App() {
   return (
@@ -10,9 +9,8 @@ function App() {
       <div className='imageClass'>
       </div>
       <Header />
-      <SearchBar/>
       <Footer/>
-
+      <Navbar/>
     </div>
   );
 }
