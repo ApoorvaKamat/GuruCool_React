@@ -75,13 +75,14 @@
 }
 .tutor-list-container{
   display: flex;
-  flex-wrap: wrap;
+  /* flex-wrap: wrap; */
   /* margin-top: 20px; */
   justify-content: center;
   align-items: center;
-  left: 50%;
-  top: 70%;
+  left: 50%; 
+
   transform: translate(-0%,100%);
+
 }
 .tutor-card-container{
   border-radius: 10px;
@@ -121,3 +122,8 @@
 .inactive{
   display: none;
 }
+.modal-backdrop{
+  z-index: -1;
+
+}
+
