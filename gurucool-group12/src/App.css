@@ -76,9 +76,12 @@
 .tutor-list-container{
   display: flex;
   flex-wrap: wrap;
-  margin-top: 20px;
+  /* margin-top: 20px; */
   justify-content: center;
   align-items: center;
+  left: 50%;
+  top: 70%;
+  transform: translate(-0%,100%);
 }
 .tutor-card-container{
   border-radius: 10px;

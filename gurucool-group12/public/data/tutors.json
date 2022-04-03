@@ -2,7 +2,7 @@
 	"Tutors": [
 	  {
 		"tutorName": "Shambhavi",
-		"profilePicture": "pathOfImage",
+		"profilePicture": "images/shamma.png",
 		"tutorRating": 5,
 		"tutorLocation": {
 		  "city": "Dallas",
@@ -46,7 +46,7 @@
 	  },
 	  {
 		"tutorName": "Apoorva K",
-		"profilePicture": "pathOfImage",
+		"profilePicture": "",
 		"tutorRating": 5,
 		"tutorLocation": {
 		  "city": "Dallas",
@@ -80,7 +80,7 @@
 	  },
 	  {
 		"tutorName": "Apoorva P",
-		"profilePicture": "pathOfImage",
+		"profilePicture": "",
 		"tutorRating": 5,
 		"tutorLocation": {
 		  "city": "Dallas",
