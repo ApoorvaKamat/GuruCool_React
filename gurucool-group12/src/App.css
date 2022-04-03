@@ -54,6 +54,9 @@
   border-radius: 20px;
   overflow: hidden;
 }
+.searchBarOnfetch{
+  top: 25%;
+}
 .searchBar input {
   box-shadow: none; 
   border-width:0px; 

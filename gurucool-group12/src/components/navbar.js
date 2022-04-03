@@ -2,6 +2,8 @@ import React,{useState} from 'react';
 import Button from './buttonLogin';
 import Option from './option';
 import { NavBarDropdown } from './navBarDropdown';
+//import { Cards } from './cards';
+import SearchBar from './search';
 
 
 const Navbar = () => {
@@ -43,6 +45,9 @@ const Navbar = () => {
             <Button name="Sign Up"/>
             <Button name="Login"/>                        
             </nav>
+            <SearchBar setClass ={isFetched} />
+            {/* {isFetched?<Cards filterData = {filterData} />:null} */}
+            
         </div>
         
     );
