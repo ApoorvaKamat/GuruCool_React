@@ -56,7 +56,7 @@ const Navbar = () => {
                      <a href="#" className="text-white p-4 nav-item nav-link navElementAdjust" onClick={onFetch}> 
                          <i className="p-2 bi bi-person"></i>Know Your Tutors</a>
             </div>
-            <Option symbol="p-2 bi bi-calendar-check"option="Book An Appointment"/>
+            <Option symbol="p-2 bi bi-calendar-check"option="Appointments"/>
             <Button name="Sign Up"/>
             <Button name="Login"/>                        
             </nav>

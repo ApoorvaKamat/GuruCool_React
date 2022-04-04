@@ -15,7 +15,6 @@ import Button from './buttonLogin';
 export const Cards = (props) => {
   const [selectedTutor, setSelectedTutor]= useState({});
   const onTutorSelect = (tutor) => {
-    console.log("index",tutor);
     setCentredModal(!centredModal)
     setSelectedTutor(tutor);
   }
@@ -28,7 +27,7 @@ export const Cards = (props) => {
         <>
             {props.filterData && props.filterData.map((tutor,index)=>{
             const {tutorName,tutorExpertise, profilePicture, tutorDescription, tutorLocation, tutorRating, workingHours} = tutor;
-            return <div key={`tutor-${index}`} className="bg-light opacity-75 tutor-card-container" >
+            return <div key={`tutor-${index}`} onClick={()=> onTutorSelect(tutor)} className="bg-light opacity-75 tutor-card-container" >
                 <div className="tutor-name">{tutorName}<span className="favorite"><i class="bi bi-heart-fill"></i></span></div>
                 
                 <div className="tutor-profile">
@@ -84,18 +83,11 @@ export const Cards = (props) => {
               <MDBBtn className='btn-close' color='none' onClick={toggleShow}></MDBBtn>
             </MDBModalHeader>
             <MDBModalBody >
-            <div>
-              <span className="bold-font"> Country : </span>
-                <span>{selectedTutor.tutorLocation.country}</span>
-              </div>
-            <div>
-              <span className="bold-font"> State : </span>
-                <span>{selectedTutor.tutorLocation.state}</span>
-              </div>
-              <div>
-              <span className="bold-font"> City : </span>
-                <span>{selectedTutor.tutorLocation.city}</span>
-              </div>
+           <div>
+           <span className="bold-font"> Know your tutor : </span>
+                <span>{selectedTutor.aboutTutor}</span>
+
+           </div>
               <div>
               <span className="bold-font"> No.of working hours : </span>
                 <span>{selectedTutor.noOfHrsPerDay}</span>
