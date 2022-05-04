@@ -2,7 +2,7 @@ import React,{useState} from 'react';
 import Button from './buttonLogin';
 import Option from './option';
 import { NavBarDropdown } from './navBarDropdown';
-//import { Cards } from './cards';
+import { Cards } from './cards';
 //import SearchBar from './search';
 
 
@@ -48,7 +48,7 @@ const Navbar = () => {
       }
 
     return (
-        <div >
+        <>
             <nav className="navbar navbar-expand-sm bg-info navbar-dark bg-dark ps-5 pe-5 navblack">
             <NavBarDropdown />
             {/* <Option symbol="p-2 bi bi-person" option="Know Your Tutors"/> */}
@@ -56,7 +56,7 @@ const Navbar = () => {
                      <a href="#" className="text-white p-4 nav-item nav-link navElementAdjust" onClick={onFetch}> 
                          <i className="p-2 bi bi-person"></i>Know Your Tutors</a>
             </div>
-            <Option symbol="p-2 bi bi-calendar-check"option="Book An Appointment"/>
+            <Option symbol="p-2 bi bi-calendar-check"option="Appointments"/>
             <Button name="Sign Up"/>
             <Button name="Login"/>                        
             </nav>
@@ -66,9 +66,14 @@ const Navbar = () => {
                 <input type="text" className="p-2 form-control" placeholder="Search..."/>
                 <button className="btn btn-outline-secondary"  type="button"> <i className="bi bi-search "></i></button>
             </div>
-            {/* {isFetched?<Cards filterData = {filterData} />:null} */}
+            {isFetched?<div>
+                <div className={`tutor-list-container ${isFetched?'':'inactive'}`}>
+                    <Cards filterData = {filterData} />
+                </div>
+            </div>
+            :null}
             
-        </div>
+        </>
         
     );
 };

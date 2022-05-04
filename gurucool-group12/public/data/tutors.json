@@ -2,8 +2,12 @@
 	"Tutors": [
 	  {
 		"tutorName": "Shambhavi",
-		"profilePicture": "pathOfImage",
+		"aboutTutor" : "Miss. Shambhavi Sant is an esteemed tutor at Gurucool and holds a Ph.D in Machine Leaning. Prior to this, she was working as a Senior Data Scientist at a fortune 100 company",
+		"profilePicture": "images/shamma.png",
 		"tutorRating": 5,
+		"city" : "Dallas",
+		"state": "Texas",
+		  "country": "USA",
 		"tutorLocation": {
 		  "city": "Dallas",
 		  "state": "Texas",
@@ -46,8 +50,13 @@
 	  },
 	  {
 		"tutorName": "Apoorva K",
-		"profilePicture": "pathOfImage",
+		"aboutTutor" : "Miss. Apoorva Kamat is an esteemed tutor at Gurucool and holds a Ph.D in Operating Systems. Prior to this, she was working as a Senior Software Developer at a fortune 100 company",
+
+		"profilePicture": "",
 		"tutorRating": 5,
+		"city" : "Dallas",
+		"state": "Texas",
+		  "country": "USA",
 		"tutorLocation": {
 		  "city": "Dallas",
 		  "state": "Texas",
@@ -80,8 +89,12 @@
 	  },
 	  {
 		"tutorName": "Apoorva P",
-		"profilePicture": "pathOfImage",
+		"aboutTutor" : "Miss. Apoorva Pise is an esteemed tutor at Gurucool and holds a Ph.D in Virtual Reality. Prior to this, she was working as a Senior VR Developer at a fortune 100 company",
+		"profilePicture": "",
 		"tutorRating": 5,
+		"city" : "Austin",
+		"state": "Texas",
+		  "country": "USA",
 		"tutorLocation": {
 		  "city": "Dallas",
 		  "state": "Texas",
