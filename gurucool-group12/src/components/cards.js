@@ -38,11 +38,11 @@ export const Cards = (props) => {
                   <div className="subject">
                   <span><i class="bi bi-trophy-fill"></i> {tutorExpertise}</span>
                 </div>
-                    <div className="rating">
+                <div className="rating">
                  {/* how to add stars dynamically based on ratings? */}
                     <span className="star"><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i></span>
                       <span> {tutorRating}</span>
-                     </div>
+                </div>
                    
                     <div className="location">
                     <span><img className="us-flag" alt="United States" src="http://purecatamphetamine.github.io/country-flag-icons/3x2/US.svg"/></span>
@@ -61,14 +61,12 @@ export const Cards = (props) => {
                       <span className=" postcard__preview-txt"> </span> 
                       <span>{tutorDescription}</span>
                     </div>
-                    <div>
-                    <Button name="MESSAGE" cls="button-card"/><Button cls="button-card" name="PROFILE"/>
-                    </div>
-                      
-                  
                   
                   </div>
                 </div>
+                <div>
+                    <Button name="PROFILE" cls="button-card"/><Button cls="button-card" name="RATE"/><Button cls="button-card" name="BOOK APPOINTMENT"/>
+                    </div>
             </div>
         
             

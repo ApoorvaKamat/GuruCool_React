@@ -135,7 +135,7 @@
 }
   .tag__item {
     display: inline-block;
-    background: rgba(25, 159, 200, 0.492);
+    background: rgba(166, 179, 183, 0.492);
     border-radius: 3px;
     padding: 2.5px 10px;
     margin: 0 5px 5px 0;
@@ -143,19 +143,20 @@
     user-select: none;
     transition: background-color 0.3s;
   }
-  .tag__item:hover {
-    background: rgba(21, 99, 117, 0.645);
-  }
+ 
   .button-card {
-    background-color:rgb(195, 195, 195);
-    float: right;
+    background-color:rgba(25, 159, 200, 0.492);
+    float:left;
     padding: 5px;
     text-align: center;
-    display: inline-block;
-    font-size: 16px;
-    margin: 4px 2px;
+    font-size: 12px;
+    font-weight: bold;
+    margin: 4px 1px;
     cursor: pointer;
-    border-radius: 16px;
+    border-radius: 15px;
+  }
+  .button-card:hover{
+    background: rgba(28, 78, 94, 0.492);
   }
 .profile-pic{
   padding: 10px;
