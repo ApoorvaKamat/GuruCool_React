@@ -178,6 +178,19 @@
 }
 .modal-backdrop{
   z-index: -1;
+  
 
 }
+.modal{
+  height: 400px;
+}
 
+
+  .date-picker-wrapper {
+    display: flex !important;
+    flex-direction: column !important;
+}
+.modalcontent
+{
+  height: 950px;
+}
