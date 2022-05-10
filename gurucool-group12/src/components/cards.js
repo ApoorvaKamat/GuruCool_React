@@ -10,6 +10,8 @@ import { MDBBtn,
 } from 'mdb-react-ui-kit';
 import defaultProfilePic from "../assets/default-profile.svg"
 import Button from './buttonLogin';
+import Appointment from './upcomingAppts';
+import CompletedAppts from "./completedAppts";
 
 
 export const Cards = (props) => {
@@ -25,6 +27,21 @@ export const Cards = (props) => {
 
   return(
         <>
+       
+          <div className="appointment_col">
+          <h4 style={{color: "black", alignContent:"center"}}>Upcoming Appointments</h4>
+        <Appointment tutor="Virtual Reality: Apoorva Pise" date="15th May: 12:00 pm - 2:00 pm"/>
+        <Appointment tutor="Python: Shambhavi Sant" date="20th May: 5:00 pm - 7:00 pm"/>
+        <Appointment tutor="C++ : Apoorva Kamat" date="21th May: 10:00 am - 12:00 pm"/>
+         
+        
+          <h4 style={{color: "black", alignContent:"center"}}>Completed Appointments</h4>
+        <CompletedAppts tutor="Virtual Reality: Apoorva Pise" date="10th May: 12:00 pm - 2:00 pm"/>
+        <CompletedAppts tutor="Python: Shambhavi Sant" date="5th May: 2:00 pm - 3:30 pm"/>
+        
+          </div>
+        
+
             {props.filterData && props.filterData.map((tutor,index)=>{
             const {tutorName,tutorExpertise, profilePicture, tutorDescription, tutorLocation, tutorRating, workingHours} = tutor;
             return <div key={`tutor-${index}`} onClick={()=> onTutorSelect(tutor)} className="bg-light opacity-75 tutor-card-container" >

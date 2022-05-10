@@ -1,3 +1,117 @@
+.appointment_col{
+  position: relative;
+  align-content: center;
+  background-color: rgba(255, 255, 255, 0.348);
+  height: 100%;
+}
+.container .list {
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding:5px;
+}
+.container .list_cmplt {
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 5px;
+}
+.list_cmplt .box {
+  margin-top: 5px;
+  position: relative;
+  width: 290px;
+  height: 60px;
+  background: rgba(51, 81, 105, 0.49);
+  border-radius: 5px;
+  box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.025);
+}
+.list .box {
+  position: relative;
+  width: 290px;
+  height: 60px;
+  background: rgba(255, 253, 253, 0.852);
+  border-radius: 5px;
+  cursor: pointer;
+  box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.025);
+}
+
+
+.list .box::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 10px;
+  height: 100%;
+  background:rgba(53, 121, 176, 0.49);
+  transition: 0.5s ease-in-out;
+}
+
+.list .box:hover::before {
+  width: 100%;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+
+.list .box .content {
+  position: relative;
+  display: flex;
+  align-items: center;
+  height: 100%;
+}
+.list_cmplt .box .content {
+  position: relative;
+  display: flex;
+  align-items: center;
+  height: 100%;
+}
+
+.list .box .content .icon {
+  position: relative;
+  min-width: 70px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2.0em;
+  color: var(--color);
+  transition: 0.5s ease-in-out;
+}
+.list_cmplt .box .content .icon {
+  position: relative;
+  min-width: 70px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2.0em;
+  color: var(--color);
+  transition: 0.5s ease-in-out;
+}
+
+
+.list .box .content .text h6 {
+  padding-top: 10px;
+  font-weight: 600;
+  color: var(--color);
+  transition: 0.5s ease-in-out;
+}
+.list_cmplt .box .content .text h6 {
+  padding-top: 10px;
+  font-weight: 600;
+  color: var(--color);
+  transition: 0.5s ease-in-out;
+}
+
+.list .box .content .text p {
+  font-size: 0.9em;
+  color: rgb(117, 117, 117);
+  transition: 0.5s ease-in-out;
+}
+
+.list .box:hover .content .text h3,
+.list .box:hover .content .text p {
+  color: #fff;
+}
+
 
 
 .imageClass {
@@ -19,10 +133,11 @@
   color: beige;
 }
 .Logo {
-  width: 5%;
+  width: 4%;
+  padding-right: 5px;
 }
 .LogoTemplate {
-  width: 20%;
+  width: 15%;
 }
 .header {
   top: 0%; 
@@ -33,6 +148,7 @@
   bottom: 0%; 
   position: fixed; 
   width: 100%;
+  height: 85px;
 }
 .copywrite{
   background-color: rgba(0, 0, 0, 0.2);
@@ -90,14 +206,14 @@
   justify-content: center;
   align-items: center;
   left: 50%;
-  top: 70%;
-  transform: translate(0%,30%);
+  top: 50%;
+  transform: translate(0%,8%);
 }
 .tutor-card-container{
   border-radius: 10px;
   border: 1px solid gray;
-  padding: 20px;
-  margin: 20px;
+  padding: 6px;
+  margin: 10px;
   cursor: pointer;
 }
 .tutor-card-container:hover{
@@ -121,6 +237,9 @@
   margin-top: 10px;
   align-items: center;
   text-align: left;
+}
+.favorite:hover{
+  transform: scale(1.4);
 }
 .us-flag{
   width:25px;
