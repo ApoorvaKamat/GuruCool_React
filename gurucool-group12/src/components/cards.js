@@ -12,6 +12,7 @@ import defaultProfilePic from "../assets/default-profile.svg"
 import Button from './buttonLogin';
 import Appointment from './upcomingAppts';
 import CompletedAppts from "./completedAppts";
+import Heart from "./heart";
 
 
 export const Cards = (props) => {
@@ -27,7 +28,7 @@ export const Cards = (props) => {
 
   return(
         <>
-       
+          <div>
           <div className="appointment_col">
           <h4 style={{color: "black", alignContent:"center"}}>Upcoming Appointments</h4>
         <Appointment tutor="Virtual Reality: Apoorva Pise" date="15th May: 12:00 pm - 2:00 pm"/>
@@ -40,12 +41,13 @@ export const Cards = (props) => {
         <CompletedAppts tutor="Python: Shambhavi Sant" date="5th May: 2:00 pm - 3:30 pm"/>
         
           </div>
+          </div>
         
 
             {props.filterData && props.filterData.map((tutor,index)=>{
             const {tutorName,tutorExpertise, profilePicture, tutorDescription, tutorLocation, tutorRating, workingHours} = tutor;
-            return <div key={`tutor-${index}`} onClick={()=> onTutorSelect(tutor)} className="bg-light opacity-75 tutor-card-container" >
-                <div className="tutor-name">{tutorName}<span className="favorite"><i class="bi bi-heart-fill"></i></span></div>
+            return <div key={`tutor-${index}`}   className="bg-light opacity-75 tutor-card-container" >
+                <div className="tutor-name">{tutorName}<span className="favorite"><i class="bi bi-heart"></i></span></div>
                 
                 <div className="tutor-profile">
                   <div className="profile-pic-container">
