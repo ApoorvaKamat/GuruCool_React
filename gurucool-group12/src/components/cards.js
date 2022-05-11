@@ -2,6 +2,9 @@ import React,{useState} from "react";
 import { MDBBtn,MDBModal,MDBModalDialog,MDBModalContent,MDBModalHeader,MDBModalTitle,MDBModalBody,MDBModalFooter} from 'mdb-react-ui-kit';
 import defaultProfilePic from "../assets/default-profile.svg"
 import Button from './buttonLogin';
+import Appointment from './upcomingAppts';
+import CompletedAppts from "./completedAppts";
+import Heart from "./heart";
 
 import DatePicker from "react-datepicker";
 import "react-datepicker/dist/react-datepicker.css";
@@ -45,20 +48,41 @@ setSelectedTutor(tutor);
 const [startDate, setStartDate] = useState(
   setHours(setMinutes(new Date(), 0), 17)
 );
-return(
-<>
-{
-  props.filterData && props.filterData.map(
-  (tutor,index)=>
-  {
-  const {tutorName,tutorExpertise, profilePicture, tutorDescription, tutorLocation, tutorRating, workingHours} = tutor;
-  return <div key={`tutor-${index}`}  className="bg-light opacity-75 tutor-card-container" >
-  <div className="tutor-name">{tutorName}<span className="favorite"><i class="bi bi-heart-fill"></i></span></div>
+// const toggleShow = () => setCentredModal(!centredModal);
+  const [heart,setHeartSeceted] = useState(false);
+  const onHeartSelect = (ind) => {
+   
+      setHeartSeceted(true);
+          console.log(ind);
+          console.log(this.index);
+  }
 
-  <div className="tutor-profile">
-  <div className="profile-pic-container">
-  <img src={profilePicture?profilePicture:defaultProfilePic} alt={defaultProfilePic} className="profile-pic"></img>
-  </div>
+  
+
+  return(
+        <>
+          <div>
+          <div className="appointment_col">
+          <h4 style={{color: "black", alignContent:"center"}}>Upcoming Appointments</h4>
+        <Appointment tutor="Virtual Reality: Apoorva Pise" date="15th May: 12:00 pm - 2:00 pm"/>
+        <Appointment tutor="Python: Shambhavi Sant" date="20th May: 5:00 pm - 7:00 pm"/>
+        <Appointment tutor="C++ : Apoorva Kamat" date="21th May: 10:00 am - 12:00 pm"/>
+          <h4 style={{color: "black", alignContent:"center"}}>Completed Appointments</h4>
+        <CompletedAppts tutor="Virtual Reality: Apoorva Pise" date="10th May: 12:00 pm - 2:00 pm"/>
+        <CompletedAppts tutor="Python: Shambhavi Sant" date="5th May: 2:00 pm - 3:30 pm"/>
+          </div>
+          </div>
+        
+
+            {props.filterData && props.filterData.map((tutor,index)=>{
+            const {tutorName,tutorExpertise, profilePicture, tutorDescription, tutorLocation, tutorRating, workingHours} = tutor;
+            return <div key={`tutor-${index}`}   className="bg-light opacity-75 tutor-card-container" >
+                <div className="tutor-name">{tutorName}<span className="favorite"><i class={heart? `bi bi-heart-fill` : `bi bi-heart`} onClick = {()=>onHeartSelect(index)}></i></span></div>
+                
+                <div className="tutor-profile">
+                  <div className="profile-pic-container">
+                     <img src={profilePicture?profilePicture:defaultProfilePic} alt={defaultProfilePic} className="profile-pic"></img>
+                  </div>
                   <div className="profile-details">
                   <div className="subject">
                   <span><i class="bi bi-trophy-fill"></i> {tutorExpertise}</span>

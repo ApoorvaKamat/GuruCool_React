@@ -3,6 +3,9 @@ import Button from './buttonLogin';
 import Option from './option';
 import { NavBarDropdown } from './navBarDropdown';
 import { Cards } from './cards';
+import { TutorCard } from './tutor_card';
+import Appointment from './upcomingAppts';
+import CompletedAppts from "./completedAppts";
 //import SearchBar from './search';
 
 
@@ -13,6 +16,8 @@ const Navbar = () => {
     const [searchValue, setSearchValue] = useState('');
     
     const fetchTutors = async ()=>{
+        //for displaying tutor template change to:
+        //await fetch("/data/student.json",
         await fetch("/data/tutors.json",
         { headers : { 
             'Content-Type': 'application/json',
@@ -20,6 +25,9 @@ const Navbar = () => {
            }
         }).then((response)=>response.json())
         .then((results)=>{
+            //for displaying tutor template change to:
+            //setMasterData(results.Students);
+            //setFilterData(results.Students);
           setMasterData(results.Tutors);
           setFilterData(results.Tutors);
         })
@@ -66,8 +74,11 @@ const Navbar = () => {
                 <input type="text" className="p-2 form-control" placeholder="Search..."/>
                 <button className="btn btn-outline-secondary"  type="button"> <i className="bi bi-search "></i></button>
             </div>
+
             {isFetched?<div>
                 <div className={`tutor-list-container ${isFetched?'':'inactive'}`}>
+                    {/* To view Tutor template change to:
+                    <TutorCard filterData = {filterData} /> */}
                     <Cards filterData = {filterData} />
                 </div>
             </div>
