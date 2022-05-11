@@ -18,8 +18,8 @@ export const TutorCard = (props) => {
 
   return(
         <>
-       
-          <div className="appointment_col">
+        <div>
+        <div className="tutor_appointment_col">
           <h4 style={{color: "black", alignContent:"center"}}>Upcoming Appointments</h4>
         <Appointment tutor="John D" date="15th May: 12:00 pm - 2:00 pm"/>
         <Appointment tutor="Chinmay S" date="21th May: 3:00 pm - 5:00 pm"/>
@@ -31,6 +31,7 @@ export const TutorCard = (props) => {
         <CompletedAppts tutor="Jayant" date="5th May: 2:00 pm - 3:30 pm"/>
         
           </div>
+        </div>
         
 
             {props.filterData && props.filterData.map((student,index)=>{
