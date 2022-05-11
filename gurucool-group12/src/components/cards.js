@@ -19,9 +19,8 @@ const starRating = {
   }
 }
 
-
 export const Cards = (props) => {
-  const [selectedTutor, setSelectedTutor]= useState({});
+const [selectedTutor, setSelectedTutor]= useState({});
  
 const [buttonName, setButtonName] = useState('');
 const [centredModal, setCentredModal] = useState(false);
@@ -38,10 +37,10 @@ const toggleShow = () => {
   setInputValue("");
 }
 const onButtonClick = (buttonName,tutor) => {
+setSelectedTutor(tutor);
  setButtonName(buttonName);
  setCentredModal(!centredModal);
 
- setSelectedTutor(tutor);
 }
 const [startDate, setStartDate] = useState(
   setHours(setMinutes(new Date(), 0), 17)
@@ -55,7 +54,7 @@ return(
   const {tutorName,tutorExpertise, profilePicture, tutorDescription, tutorLocation, tutorRating, workingHours} = tutor;
   return <div key={`tutor-${index}`}  className="bg-light opacity-75 tutor-card-container" >
   <div className="tutor-name">{tutorName}<span className="favorite"><i class="bi bi-heart-fill"></i></span></div>
-  {/* onClick={()=> onTutorSelect(tutor)} */}
+
   <div className="tutor-profile">
   <div className="profile-pic-container">
   <img src={profilePicture?profilePicture:defaultProfilePic} alt={defaultProfilePic} className="profile-pic"></img>

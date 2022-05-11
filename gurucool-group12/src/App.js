@@ -2,7 +2,7 @@ import './App.css';
 import { Header } from './components/header';
 import Footer from './components/footer';
 import Navbar from './components/navbar';
-
+import AvgTutorRating from './components/avgTutorRating';
 function App() {
   return (
     <div className="App">
@@ -11,6 +11,7 @@ function App() {
       <Header />
       <Footer/>
       <Navbar/>
+      <AvgTutorRating/>
     </div>
   );
 }
