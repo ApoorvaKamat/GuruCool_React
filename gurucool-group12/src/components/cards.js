@@ -25,11 +25,11 @@ export const Cards = (props) => {
 
   const toggleShow = () => setCentredModal(!centredModal);
   const [heart,setHeartSeceted] = useState(false);
+  const [card_index, setIndex] = useState(0);
   const onHeartSelect = (ind) => {
-   
-      setHeartSeceted(true);
-          console.log(ind);
-          console.log(this.index);
+    console.log(ind);
+    console.log(card_index);
+    setHeartSeceted(true);
   }
 
   return(
@@ -53,7 +53,7 @@ export const Cards = (props) => {
             {props.filterData && props.filterData.map((tutor,index)=>{
             const {tutorName,tutorExpertise, profilePicture, tutorDescription, tutorLocation, tutorRating, workingHours} = tutor;
             return <div key={`tutor-${index}`}   className="bg-light opacity-75 tutor-card-container" >
-                <div className="tutor-name">{tutorName}<span className="favorite"><i class={heart? `bi bi-heart-fill` : `bi bi-heart`} onClick = {()=>onHeartSelect(index)}></i></span></div>
+                <div className="tutor-name">{tutorName}<span className="favorite"><i class={heart? `bi bi-heart-fill` : `bi bi-heart`} onClick = {()=>{onHeartSelect(index);setIndex(card_index+index)}}></i></span></div>
                 
                 <div className="tutor-profile">
                   <div className="profile-pic-container">
